@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gold-titan-ai
+    runtime: node
+    plan: free
+    buildCommand: echo 'No build required'
+    startCommand: npm start
+    envVars:
+      - key: BRIDGE_TOKEN
+        sync: false
